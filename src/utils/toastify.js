@@ -1,10 +1,8 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// minified version is also included
-// import 'react-toastify/dist/ReactToastify.min.css';
 
 export const warningToastify = (msg) => {
-    toast(msg, {
+    toast.warn(msg, {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -26,4 +24,4 @@ export const successToastify = (msg) => {
         draggable: true,
         progress: undefined,
     });
-}
+};

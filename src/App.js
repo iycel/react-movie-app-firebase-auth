@@ -1,4 +1,3 @@
-
 import AuthProvider from './context/AuthContext';
 import AppRouter from './router/AppRouter';
 

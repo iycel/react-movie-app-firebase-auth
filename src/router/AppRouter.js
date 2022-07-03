@@ -7,19 +7,18 @@ import Search from "../pages/Search";
 import NavbarMain from "../components/NavbarMain";
 
 const AppRouter = () => {
-
-    return (
-        <Router>
-            <NavbarMain />
-            <Routes>
-                <Route path='/login' element={<Login />} />
-                <Route path='/register' element={<Register />} />
-                <Route path='/' element={<Main />} />
-                <Route path='/details' element={<MovieDetail />} />
-                <Route path='/search' element={<Search />} />
-            </Routes>
-        </Router>
-    )
+  return (
+    <Router>
+      <NavbarMain />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/details/:id" element={<MovieDetail />} />
+        <Route path="/search" element={<Search />} />
+      </Routes>
+    </Router>
+  );
 };
 
 export default AppRouter;
