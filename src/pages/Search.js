@@ -12,7 +12,7 @@ const Search = () => {
   // const { currentUser } = useContext(AuthContext);
 
   const API_KEY = process.env.REACT_APP_TMDB_KEY;
-  const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchSend}`;
+  const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchSend}&adult=true&language=tr`;
 
   useEffect(() => {
     axios

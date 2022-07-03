@@ -15,11 +15,14 @@ const Navbar = () => {
     e.preventDefault();
     if (searchTerm && currentUser) {
       navigate("/search", { state: searchTerm });
+      setSearchTerm('')
     } else if (!currentUser) {
       warningToastify("Please log in to search a movie");
+      setSearchTerm('')
       // alert("Please log in to search a movie");
     } else {
       warningToastify("Please enter a text");
+      setSearchTerm('')
       // alert("Please enter a text");
     }
   };

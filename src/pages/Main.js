@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
 
 const API_KEY = process.env.REACT_APP_TMDB_KEY;
-const FEATURED_API = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}`;
-// const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=`;
+const FEATURED_API = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=tr`;
 
 const Main = () => {
   const [movies, setMovies] = useState([]);

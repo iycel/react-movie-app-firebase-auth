@@ -18,7 +18,7 @@ const SearchCard = ({ title, poster_path, overview, vote_average, id }) => {
       onClick={
         () =>
           currentUser
-            ? navigate("details/" + id)
+            ? navigate("/details/" + id)
             : warningToastify("Please log in to see details")
         // : alert("Please log in to see details")
       }

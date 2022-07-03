@@ -25,8 +25,8 @@ const Login = () => {
             <div className='h-50 w-50 text-center'>
                 <form onSubmit={handleSubmit}>
                     <div className="btn-group mt-5" role="group" aria-label="Basic mixed styles example">
-                        <ClickButton classNameClick={'btn btn-white btn-lg border border-3'} text={'Login'} classNameText={'fw-bold text-dark'} />
-                        <ClickButton classNameClick={"btn btn-light btn-lg"} text={'Register'} classNameText={'fw-bold text-dark disabled'} handleClick={() => navigate('/register')} />
+                        <ClickButton classNameClick={'btn btn-white btn-lg'} text={'Login'} classNameText={'fw-bold text-dark disabled'} />
+                        <ClickButton classNameClick={"btn btn-light btn-lg border border-3"} text={'Register'} classNameText={'fw-bold text-dark'} handleClick={() => navigate('/register')} />
                     </div>
                     <div className="form-floating mb-3 mt-4">
                         <input type="email" className="form-control bg-light" id="floatingInput"
