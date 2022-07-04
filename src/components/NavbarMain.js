@@ -15,14 +15,14 @@ const Navbar = () => {
     e.preventDefault();
     if (searchTerm && currentUser) {
       navigate("/search", { state: searchTerm });
-      setSearchTerm('')
+      setSearchTerm("");
     } else if (!currentUser) {
       warningToastify("Please log in to search a movie");
-      setSearchTerm('')
+      setSearchTerm("");
       // alert("Please log in to search a movie");
     } else {
       warningToastify("Please enter a text");
-      setSearchTerm('')
+      setSearchTerm("");
       // alert("Please enter a text");
     }
   };
@@ -109,7 +109,7 @@ const Navbar = () => {
                 aria-label="Search"
                 onMouseLeave={toggleHover}
                 onMouseEnter={toggleHover}
-                value={searchTerm}
+                value={searchTerm || ""}
                 onChange={handleChange}
               />
               <button

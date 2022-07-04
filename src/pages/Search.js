@@ -6,7 +6,7 @@ import axios from "axios";
 const Search = () => {
   const [search, setSearch] = useState([]);
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
   // geçerli URL'yi temsil eden konum nesnesini döndürür
   const searchSend = location.state;
   // const { currentUser } = useContext(AuthContext);
