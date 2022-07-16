@@ -60,7 +60,7 @@ const MovieDetail = () => {
                 {"Total Vote : " + movieDetails?.vote_count}
               </li>
               <li className="list-group-item">
-                <Link to={-1} className="card-link">
+                <Link to={-1} className="card-link" style={{ 'textDecoration': 'none' }}>
                   Go Back
                 </Link>
               </li>
