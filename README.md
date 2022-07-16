@@ -1,4 +1,4 @@
-## Vanilla JavaScript - Sass - Toastify
+## React Movie App
 
 ![Snapshot](movieapp.gif)
 
